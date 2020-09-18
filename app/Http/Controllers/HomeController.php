@@ -39,7 +39,7 @@ class HomeController extends Controller
     
     public function list()
     {
-        $users = User::all();
+        $users = User::Where('is_admin', 0)->get();
         return view('list',[
             'users' => $users
         ]);

@@ -17,10 +17,10 @@ Route::get('videos/novo', 'VideoController@formAddVideo')->name('videos.formAddV
 Route::post('videos/store', 'VideoController@storeVideo')->name('videos.store');
 Route::get('videos/listProfessor', 'VideoController@videoList')->name('videos.list');
 Route::get('videos/list', 'VideoController@videoListAluno')->name('videos.listAluno');
-Route::get('videos/editar/{video}', 'VideoController@formEdit')->name('videos.editVideo');
 
 //ROTA EDITAR
-Route::patch('videos/edit/{video}', 'VideoController@edit')->name('videos.edit');
+Route::get('videos/editar/{video}', 'VideoController@formEdit')->name('videos.editVideo');
+Route::put('videos/edit/{video}', 'VideoController@edit')->name('videos.edit');
 
 //DELETE ROTA
 Route::delete('videos/{video}','VideoController@destroy')->name('videos.destroy');

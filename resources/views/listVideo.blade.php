@@ -30,9 +30,8 @@
               @method('delete')
               <input type="submit" value="Remover">
             </form>
-            <form action="{{ route('videos.editVideo', ['video' => $video->id]) }}" method="POST">
+            <form action="{{ route('videos.editVideo', ['video' => $video->id]) }}" method="GET">
               @csrf
-              @method('patch')
               <input type="submit" value="Editar">
             </form>
           </td>

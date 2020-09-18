@@ -82,10 +82,10 @@ class VideoController extends Controller
         //
     }
 
-    public function formEdit(Video $id)
+    public function formEdit(Video $video)
     {
         return view('editVideo', [
-            'video' => $id
+            'video' => $video
         ]);
     }
 

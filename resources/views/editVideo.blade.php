@@ -13,9 +13,9 @@
 
     <div class="container">
         <div class="row justify-content-center">
-<form action="" method="POST">
+<form action="{{ route('videos.edit', ['video' => $video->id]) }}" method="POST">
     @csrf
-    @method('patch')
+    @method('PUT')
     <label for="">Descrição do Video</label><br/>
     <input type="text" name="descricao" value="{{ $video->descricao }}"><br/>
 
