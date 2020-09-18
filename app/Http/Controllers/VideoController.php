@@ -44,6 +44,8 @@ class VideoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+
     public function storeVideo(Request $request)
     {
        //modelo de save;
@@ -95,6 +97,7 @@ class VideoController extends Controller
      * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
+
     public function edit(Video $video, Request $request)
     {
         //Editando videos
@@ -122,6 +125,7 @@ class VideoController extends Controller
      * @param  \App\Video  $video
      * @return \Illuminate\Http\Response
      */
+    
     public function destroy(Video $video)
     {
         $video->delete();

@@ -36,7 +36,9 @@ class HomeController extends Controller
     {
         return view('adminHome');
     }
-    
+
+
+    //Puxando a lista de usuarios de Alunos pelo 'is_admin'. 
     public function list()
     {
         $users = User::Where('is_admin', 0)->get();
