@@ -31,10 +31,12 @@
                                     @method('delete')
                                     <input class="btn btn-danger" type="submit" value="Remover">
                                 </form>
+                            <td>
                                 <form action="{{ route('videos.editVideo', ['video' => $video->id]) }}" method="GET">
                                     @csrf
                                     <input class="btn btn-warning" type="submit" value="Editar">
                                 </form>
+                            </td>
                             </td>
                         </tr>
                     @endforeach()
