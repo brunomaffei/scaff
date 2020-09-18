@@ -15,8 +15,8 @@
                         <a href="{{ route('videos.list') }}">Lista de Videos</a>
                     </div>
                     <div class="card-body">
-                        <button class="btn btn-primary" onClick="location.href='{{ url('/videos/novo') }}'">Upload
-                            Videos</button>
+                        <a href="{{ route('videos.formAddVideo') }}">Upload Videos</a>
+                        </button>
                     </div>
 
                 </div>
