@@ -29,11 +29,11 @@
                                 <form action="{{ route('videos.destroy', ['video' => $video->id]) }}" method="POST">
                                     @csrf
                                     @method('delete')
-                                    <input type="submit" value="Remover">
+                                    <input class="btn btn-danger" type="submit" value="Remover">
                                 </form>
                                 <form action="{{ route('videos.editVideo', ['video' => $video->id]) }}" method="GET">
                                     @csrf
-                                    <input type="submit" value="Editar">
+                                    <input class="btn btn-warning" type="submit" value="Editar">
                                 </form>
                             </td>
                         </tr>

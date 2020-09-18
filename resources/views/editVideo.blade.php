@@ -24,7 +24,8 @@
                     <label for="">Link</label><br />
                     <input type="text" name="link" value="{{ $video->link }}"><br />
 
-                    <input type="submit" value="Editar Video">
+                    <br />
+                    <input class="btn btn-warning" type="submit" value="Editar Video">
                 </form>
             </div>
         </div>
